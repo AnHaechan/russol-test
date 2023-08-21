@@ -1,0 +1,20 @@
+Deallocate a linked list
+
+###
+
+{true; list(x)}
+  void listfree(loc x)
+{true ; emp }
+
+###
+
+void listfree (loc x) {
+  if (x == 0) {
+  } else {
+    let n = *x;
+    listfree(n);
+    free(x);
+  }
+}
+
+
